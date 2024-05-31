@@ -1,0 +1,9 @@
+on: push
+jobs:
+    build-project:
+        name: Construccion del Proyecto 01
+        runs-on: ubuntu-latest
+        steps:
+            - run: node --version
+            - run: npm --version
+            
