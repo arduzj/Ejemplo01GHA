@@ -3,8 +3,8 @@ jobs:
     build-project:
         name: Construccion del Proyecto 01
         runs-on: ubuntu-latest
+        container: node:21.7.3
         steps:
             - run: node --version
             - run: npm --version
 
-            
