@@ -5,9 +5,12 @@ jobs:
         runs-on: ubuntu-latest
         container: node:21.7.3
         steps:
-            - run: node --version
-            - run: npm --version
+            - name: Obtener version de NODE
+              run: node --version
+            - name: Obtener version de NPM
+              run: npm --version
             - uses: actions/checkout@v4
             - run: npm install
-            - run: node app.js
+            - name: No olvidar ejecutar la APP
+              run: node app.js
 
